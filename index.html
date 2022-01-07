@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+      
+    <!-- ==================================owl links============================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="background-color: #181818;">
+    <div class="bg-image text-white" id="home" style="background-image: url('https://wallpapercave.com/wp/wp8638168.jpg'); background-repeat: no-repeat; padding-left:16px; background-position: center center; background-size: cover; width: 100%;">
+
+        <!-- ========================navbar============================ -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="homePage.html">
+                  <img src="https://farm6.staticflickr.com/5821/20639706793_8c038faa4a_o.png" alt="logo" width="75" class="d-inline-block align-middle mr-2">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><img src="https://img.icons8.com/office/30/000000/xbox-menu.png"/></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#movies">Movies</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#tvShows">TV Shows</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#recent">Recently Added</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="watchlist.html">My List</a>
+                  </li>
+
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active text-white" aria-current="page" href="#">
+                        <img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/30/000000/external-user-interface-kiranshastry-gradient-kiranshastry.png"/>
+                      </a>
+                    </li>
+                  </ul>
+                
+              </div>
+            </div>
+        </nav>
+
+        <!-- =======================Main Image of Homepage =====================-->
+        <div class="mainDiv">
+            <div class="logoDiv">
+                <img src="https://occ-0-2162-3647.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABczZYDxuKWMjwZ2T4yxbF7ZMubBD8daM0C6gf8ypMfNmx61-YbkZX7NChFGAW_G09cCULPhRPqEKD-dhSV4QYP8XATCHBsgv8_ArN7fysZunxb2EPrD9uLKayoDsz9HWbVA9VDTeHLkTzpyE40O8_YDMt8noApDJ5_STfnHa1Xvdjg.png?r=768" alt="logo" class="logo position-realtive">
+            </div>
+
+            <div class="buttons mt-3">
+                <button class="btn btn-danger me-3 mb-2 unique" onclick="unique()"> PLAY <img src="https://img.icons8.com/color/24/000000/play-button-circled--v1.png"/> </button>
+                <button class="btn btn-outline-secondary mb-2 " style="border: 2px solid white ; color: white;">Watch List </button>
+            </div>
+
+            <div class="detailContainer">
+                <div class="detailContainerInfo">
+                    <h1>La casa de papel</h1>
+                </div>
+
+                <div class="titleInfo">
+                    <span>2015 | 18+ | 5 Seasons | </span>
+                    <a href="#" class="moreShows">More Thrillers</a>
+                </div>
+            </div>
+
+            <div class="detailContainerInfo">
+                <h3>Watch Season 5</h3>
+            </div>
+
+            <div class="description">
+                <div class="descriptionData">
+                    Set in Madrid, a mysterious man known as the "Professor" recruits a group of eight people, who choose city names as their aliases, to carry out an ambitious plan that involves entering the Royal Mint of Spain, and escaping with €984 million. After taking 67 people hostage inside the Mint, the team plans to remain inside for 11 days to print the money as they deal with elite police forces.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- =============================Movies Owl Carousel========================= -->
+    <div class="movies" id="movies">
+         <h5 style="margin-bottom: 0.5rem; margin-top: 1rem; margin-left: 0.5rem;">Movies</h5>
+         <div class="owl-carousel owl-theme">
+             
+            <div>
+                <a href="moviePage.html" target="_blank" class="imageClick">
+                    <img src="http://hdqwalls.com/wallpapers/spiderman-homecoming-movie-poster-c1.jpg" alt="spider" class="card-img-top">
+               </a>
+               <!-- ===================invisible data div 1===================== -->
+               <div class="first" style="display: none;">
+                   <h1>Spider-Man</h1>
+                   <p>2021 | 10+ | <a href="#" class="moreShows">Action & Adventure</a></p>
+                   <div class="descriptionData">
+                       After getting bitten by a genetically enhanced spider, shy teen
+                     Peter Parker uses his newfound superpowers to fight injustice and
+                     battle a vengeful supervillain.
+                   </div>
+   
+                   <div class="bgImage">
+                       http://hdqwalls.com/wallpapers/spiderman-homecoming-movie-poster-c1.jpg
+                   </div>
+   
+                   <div class="logoImage">
+                       https://freepngimg.com/thumb/spiderman/83062-parker-spiderman-text-may-miles-morales-red.png
+                   </div>
+               </div>
+            </div>
+            
+           
+
+
+
+
+            <div>
+                <a href="moviePage.html" target="_blank" class="imageClick">
+                    <img src="https://wallpapercave.com/wp/wp9357383.jpg" class="card-img-top" alt="brave">
+                </a>
+                <!-- ===============================invisible data div 2 ====================================== -->
+                <div class="second" style="display: none">
+                    <h1>Disney Pixar BRAVE</h1>
+                    <p>
+                      1999 | 6+ | <a class="moreShows" href="#">Aimations and Drama</a>
+                    </p>
+                    <div class="descriptionData">
+                      The princess is Merida (voice of Kelly Macdonald), seen in an action-packed prologue as a flame-haired Scottish tomboy whose life is changed by an early birthday gift of a bow, which quickly inspires her to become the best archer in the kingdom.
+                    </div>
+                    <div class="bgImage">
+                      https://wallpapercave.com/wp/wp9357383.jpg
+                    </div>
+                    <div class="logoImg">
+                      https://www.pngplay.com/wp-content/uploads/7/Brave-Movie-Logo-PNG-HD-Quality.png
+                    </div>
+                  </div>
+            </div>
+
+            <div>
+                <a href="moviePage.html" target="_blank" class="imageClick">
+                    <img src="https://wallpapercave.com/wp/R4XMgML.jpg" class="card-img-top" alt="Inception">
+                </a>
+                <!-- ===============================invisible data div 3 ====================================== -->
+                <div class="third" style="display: none">
+                    <h1>Inception</h1>
+                    <p>
+                      2010 | 16+ | <a class="moreShows" href="#">Science Fiction Action Film</a>
+                    </p>
+                    <div class="descriptionData">
+                      Dominick "Dom" Cobb and Arthur are "extractors"; they perform corporate espionage using experimental military technology to infiltrate their targets' subconscious and extract information through a shared dream world. 
+                    </div>
+                    <div class="bgImage">
+                      https://wallpapercave.com/wp/R4XMgML.jpg
+                    </div>
+                    <div class="logoImg">
+                      https://picfiles.alphacoders.com/678/67844.png
+                    </div>
+                  </div>
+            </div>
+
+            <div>
+                <a href="moviePage.html" target="_blank" class="imageClick">
+                    <img src="https://wallpapercave.com/wp/wp8648270.jpg" class="card-img-top" alt="Ant-Man">
+                </a>
+                <!-- ===============================invisible data div 4 ====================================== -->
+                <div class="fourth" style="display: none">
+                    <h1>Ant-Man</h1>
+                    <p>
+                      2015 | 13+ | <a class="moreShows" href="#">American superhero film </a>
+                    </p>
+                    <div class="descriptionData">
+                      In 1989, scientist Hank Pym resigns from S.H.I.E.L.D. after discovering their attempt to replicate his Ant-Man shrinking technology. Believing the technology would be dangerous if replicated, Pym vows to hide it for as long as he lives.
+                    </div>
+                    <div class="bgImage">
+                      https://wallpapercave.com/wp/wp8648270.jpg
+                    </div>
+                    <div class="logoImg">
+                     https://upload.wikimedia.org/wikipedia/commons/3/38/Ant-Man_%28Film%29_Logo.png
+                    </div>
+                  </div>
+            </div>
+
+            <div>
+                <a href="moviePage.html" target="_blank" class="imageClick">
+                    <img src="https://wallpapercave.com/wp/wp7945969.jpg" class="card-img-top" alt="Black Widow">
+                </a>
+                <!-- ===============================invisible data div 5 ====================================== -->
+                <div class="fifth" style="display: none">
+                    <h1>Black Widow</h1>
+                    <p>
+                      2021 | 13+ | <a class="moreShows" href="#">American superhero film </a>
+                    </p>
+                    <div class="descriptionData">
+                      In 1995, super soldier Alexei Shostakov and Black Widow Melina Vostokoff work as Russian undercover agents, posing as a family in Ohio with Natasha Romanoff and Yelena Belova as their daughters. They steal S.H.I.E.L.D. intel and escape to Cuba where their boss, General Dreykov, has Romanoff and Belova taken to the Red Room for training.
+                    </div>
+                    <div class="bgImage">
+                      https://wallpapercave.com/wp/wp7945969.jpg
+                    </div>
+                    <div class="logoImg">
+                      https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/846a9086-8a40-43e0-aa10-2fc7d6d73730/ddcg707-6e902a55-8145-47f1-b2f3-12fd1fa65fdd.png/v1/fill/w_800,h_244,strp/black_widow__2021__logo_png_by_mintmovi3_ddcg707-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjQ0IiwicGF0aCI6IlwvZlwvODQ2YTkwODYtOGE0MC00M2UwLWFhMTAtMmZjN2Q2ZDczNzMwXC9kZGNnNzA3LTZlOTAyYTU1LTgxNDUtNDdmMS1iMmYzLTEyZmQxZmE2NWZkZC5wbmciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.vbYo43VGGKPCDRjN5wvKSmYaY_tLo8Oduimq94rjKzA
+                    </div>
+                  </div>
+             </div>
+
+             <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.X8i5yh5j0cM3y-Unp_mOwwHaEK&pid=Api&P=0&w=317&h=179 class="card-img-top" alt="spider">
+            </a>
+
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="https://www.blogenium.com/wp-content/uploads/2019/09/Blogenium-Movie-Wallpapers-17.jpg" class="card-img-top" alt="spider">
+            </a>
+
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.zs3gpYR6nZQFS_E3FTjvpAHaEo&pid=Api&P=0&w=246&h=154" class="card-img-top" alt="spider">
+            </a>
+
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.gzZoeNN90RWULNZdrG7P7QHaEK&pid=Api&P=0&w=275&h=155" class="card-img-top" alt="spider">
+            </a>
+        </div>
+    </div>
+
+    <!-- =============================TV Shows Owl Carousel========================= -->
+    <div class="tvShows" id="tvShows">
+        <h5 style="margin-bottom: 0,5rem; margin-top: 1rem; margin-left: 0.5rem;">TV Shows</h5>
+        <div class="owl-carousel owl-theme">
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="http://getwallpapers.com/wallpaper/full/f/8/5/126751.jpg" class="card-img-top" alt="spider">
+            </a>
+
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="http://wallpapersdsc.net/wp-content/uploads/2015/10/1.jpg" class="card-img-top" alt="spider">
+            </a>
+
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="https://cdn.wallpapersafari.com/35/27/rJGLOP.jpg" class="card-img-top" alt="spider">
+            </a>
+
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.lJQY2Isj_ZSsT_tyJewtrgHaEo&pid=Api&P=0&w=257&h=161" class="card-img-top" alt="spider">
+            </a>
+
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="https://img.xcitefun.net/users/2010/04/168195,xcitefun-frozen-02.jpg" class="card-img-top" alt="spider">
+            </a>
+
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="https://img.xcitefun.net/users/2010/04/168195,xcitefun-frozen-02.jpg" class="card-img-top" alt="spider">
+            </a>
+
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.22_j_RgWJCQ9f8T2nStdQwHaDZ&pid=Api&P=0&w=386&h=178" class="card-img-top" alt="spider">
+            </a>
+
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="http://hdqwalls.com/wallpapers/spiderman-homecoming-movie-poster-c1.jpg" class="card-img-top" alt="spider">
+            </a>
+
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="https://tse4.mm.bing.net/th?id=OIP._c_fb2mNC9o8apMvDgt4-AHaEK&pid=Api&P=0&w=275&h=155" class="card-img-top" alt="spider">
+            </a>
+       </div>
+   </div>
+   
+
+
+    <!-- =============================Recently Added Owl Carousel========================= -->
+    <div class="recent" id="recent">
+        <h5 style="margin-bottom: 0,5rem; margin-top: 1rem; margin-left: 0.5rem;">Recently Added</h5>
+        <div class="owl-carousel owl-theme">
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.X8i5yh5j0cM3y-Unp_mOwwHaEK&pid=Api&P=0&w=317&h=179" 
+                class="card-img-top" alt="spider">
+            </a>
+
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="https://www.blogenium.com/wp-content/uploads/2019/09/Blogenium-Movie-Wallpapers-17.jpg" class="card-img-top" alt="spider">
+            </a>
+
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.gzZoeNN90RWULNZdrG7P7QHaEK&pid=Api&P=0&w=275&h=155" class="card-img-top" alt="spider">
+            </a>
+
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.zs3gpYR6nZQFS_E3FTjvpAHaEo&pid=Api&P=0&w=246&h=154" class="card-img-top" alt="spider">
+            </a>
+
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="https://tse4.mm.bing.net/th?id=OIP._c_fb2mNC9o8apMvDgt4-AHaEK&pid=Api&P=0&w=275&h=155" class="card-img-top" alt="spider">
+            </a>
+
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="http://hdqwalls.com/wallpapers/spiderman-homecoming-movie-poster-c1.jpg" class="card-img-top" alt="spider">
+            </a>
+
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="http://hdqwalls.com/wallpapers/spiderman-homecoming-movie-poster-c1.jpg" class="card-img-top" alt="spider">
+            </a>
+
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="http://hdqwalls.com/wallpapers/spiderman-homecoming-movie-poster-c1.jpg" class="card-img-top" alt="spider">
+            </a>
+
+            <a href="moviePage.html" target="_blank" class="imageClick">
+                <img src="http://hdqwalls.com/wallpapers/spiderman-homecoming-movie-poster-c1.jpg" class="card-img-top" alt="spider">
+            </a>
+       </div>
+   </div>
+
+
+
+
+   <div class="footer overflow-hidden w-100 border-0 mt-4">
+       <div class="card text-start text-white" style="background-color: black; width: 100% !important;">
+        <div class="card-body m-4 align-items-center" style="text-align: center;">
+            <h5 class="card-title">Questions? Call 000-800-040-1843</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <div class="footerList d-flex align-items-center justify-content-center">
+                <ol>
+                    <ul>FAQ</ul>
+                    <ul>Investor Relations</ul>
+                    <ul>Privacy</ul>
+                    <ul>Speed Test</ul>
+
+                </ol>
+
+                <ol>
+                    <ul>Help Centre</ul>
+                    <ul>Jobs</ul>
+                    <ul>Cookie Preferences</ul>
+                    <ul>Legal Notices</ul>
+
+                </ol>
+
+                <ol>
+                    <ul>Account</ul>
+                    <ul>Ways to Watch</ul>
+                    <ul>PCorporate Information</ul>
+                    <ul>Only on Netflix</ul>
+
+                </ol>
+            </div>
+
+
+
+            <select data-uia = "language-picker" class="ui-select medium ms-5" id="lang-switcher-select" tabindex="0" placeholder="lang-switcher">
+                <option selected= "" lang="en" data-language = "en" data-country="IN" value="/in/">ENGLISH</option>
+                <option lang="hi" data-language = "hi" data-country="IN" value="/in-hi/">हिन्दी</option>
+            </select>
+        </div>
+        </div>
+   </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    <!-- ==================================owl tags============================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:2,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+})
+    </script>
+
+
+
+    <script src="./script.js"></script>
+    <script>imageClick()</script>
+</body>
+</html>
